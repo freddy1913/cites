@@ -5,9 +5,15 @@ namespace App\Http\Controllers;
 use App\Forms\JournalForm;
 use Illuminate\Http\Request;
 use Kris\LaravelFormBuilder\FormBuilder;
+use App\Models\Journal;
 
 class JournalController extends Controller
 {
+
+    public function __construct(FormBuilder $formBuilder)
+    {
+        $this->formBuilder = $formBuilder;
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +21,7 @@ class JournalController extends Controller
      */
     public function index()
     {
-        //
+        return view('journal.index');
     }
 
     /**
@@ -35,9 +41,14 @@ class JournalController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store()
     {
-        //
+        $journal = new Journal();
+        $form = $this->getForm($journal);
+        $form->redirectIfNotValid();
+        $journal->save();
+
+        return redirect()->back();
     }
 
     /**
@@ -83,5 +94,14 @@ class JournalController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    private function getForm(Journal $journal)
+    {
+        return $this->formBuilder->create(JournalForm::class, [
+             'model' => $journal
+
+        ]);
+
     }
 }
