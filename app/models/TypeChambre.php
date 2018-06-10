@@ -4,9 +4,8 @@ namespace App\models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Journal extends Model
+class TypeChambre extends Model
 {
-    protected $table='journal';
+    protected $table = "type_chambre";
     public $timestamps = false;
-
 }

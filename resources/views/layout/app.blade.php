@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <link rel="stylesheet" href="{{ asset('css/sb-admin.min.css')}}">
-    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
   <body>
   <script src="{{ asset('js/app.js') }}"></script>
@@ -19,16 +19,16 @@
   <body class="fixed-nav sticky-footer bg-dark" id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-      <a class="navbar-brand" href="/">Application logement</a>
+      <a class="navbar-brand" href="{{ url('/') }}">Application logement</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{{ url('journal') }}">
               <i class="fa fa-fw fa-dashboard"></i>
-              <span class="nav-link-text">Dashboard</span>
+              <span class="nav-link-text">Journal</span>
             </a>
           </li>
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">

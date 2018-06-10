@@ -14,23 +14,23 @@ class JournalForm extends Form
         ];
 
 
-        $this->add('C_NOM' , 'text', [
+        $this->add('nom' , 'text', [
             'label' => 'Nom',
             'rules' => 'required|min:2|max:20'] );
 
-        $this->add('C_IBAN' , 'text',[
+        $this->add('iban' , 'text',[
             'label' => 'Iban',
             'rules' => 'required|min:2|max:34'] );
 
-        $this->add('C_BIC' , 'text', [
+        $this->add('bic' , 'text', [
             'label' => 'Bic',
             'rules' => 'required|min:2|max:11']);
 
-        $this->add('N_SOLDE' , 'text', [
+        $this->add('solde' , 'text', [
             'label' => 'Solde',
             'rules' => 'required|numeric']);
 
-        $this->add('C_STATUT', 'select', [
+        $this->add('statut', 'select', [
             'label' => 'Statut',
             'choices' => ['Actif' => 'Actif', 'Inactif' => 'Inactif'],
             'selected' => 'Actif',
