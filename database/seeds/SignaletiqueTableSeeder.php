@@ -11,6 +11,6 @@ class SignaletiqueTableSeeder extends Seeder
      */
     public function run()
     {
-      factory(App\models\Signaletique::class, 3)->create();
+      factory(App\models\Signaletique::class, 15)->create();
     }
 }

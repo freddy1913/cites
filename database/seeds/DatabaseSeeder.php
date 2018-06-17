@@ -19,5 +19,11 @@ class DatabaseSeeder extends Seeder
        $this->call(SignaletiqueTableSeeder::class);
        $this->call(TypeChambreTableSeeder::class);
        $this->call(UtilisateurTableSeeder::class);
+       $this->call(AdresseTableSeeder::class);
+       $this->call(SignaletiqueAdresseTableSeeder::class);
+       $this->call(AnneeAcTableSeeder::class);
+       $this->call(CiteTableSeeder::class);
+       $this->call(FactNatureTableSeeder::class);
+       $this->call(TypeOperationTableSeeder::class);
     }
 }

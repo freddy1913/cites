@@ -4,9 +4,8 @@ namespace App\models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Adresse extends Model
+class AnneeAc extends Model
 {
-    protected $table = 'adresse';
+    protected $table = 'annee_academique';
     public $timestamps = false;
-    
 }
