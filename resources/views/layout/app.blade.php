@@ -8,13 +8,24 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ asset('css/app.css')}}">
-    <link rel="stylesheet" href="{{ asset('css/sb-admin.min.css')}}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  </head>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/sb-admin.min.css') }}">
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+ 
+    </head>
   <body>
-  <script src="{{ asset('js/app.js') }}"></script>
-  <script src="{{ asset('js/sb-admin.min.js') }}"></script>
+
+ 
+
+  
+ 
+
+
+
+
+
   
   <body class="fixed-nav sticky-footer bg-dark" id="page-top">
     <!-- Navigation-->
@@ -231,7 +242,9 @@
           </div>
         
       <!-- /.container-fluid-->
+      <div id="app">
       @yield('content')
+    </div>
       <!-- /.content-wrapper-->
       <footer class="sticky-footer">
         <div class="container">
@@ -262,6 +275,10 @@
           </div>
         </div>
       </div>
+
+      <script src="{{ asset('js/sb-admin.min.js') }}"></script>
+
+
     
 
   </body>
