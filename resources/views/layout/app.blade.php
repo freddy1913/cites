@@ -10,23 +10,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/sb-admin.min.css') }}">
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+
  
     </head>
   <body>
 
  
-
-  
- 
-
-
-
-
-
-  
   <body class="fixed-nav sticky-footer bg-dark" id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
@@ -276,7 +265,15 @@
         </div>
       </div>
 
-      <script src="{{ asset('js/sb-admin.min.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+    <script src="{{ asset('js/sb-admin.min.js') }}"></script>
+
+
+    <script>
+ var test = _.upperCase('Moi je dis j\'envoie valser');
+    console.log(test);
+</script>
 
 
     

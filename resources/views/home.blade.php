@@ -12,9 +12,6 @@
 
 </div>
 
-<script>
- var test = _.upperCase('Moi je dis j\'envoie valser');
-    console.log(test);
-</script>
+
 
 @stop
